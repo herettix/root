@@ -1,0 +1,117 @@
+C51 COMPILER V9.01   TERMO                                                                 11/17/2010 12:44:15 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE TERMO
+OBJECT MODULE PLACED IN termo.OBJ
+COMPILER INVOKED BY: C:\applic\Keil\C51\BIN\C51.EXE termo.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          /*************************************************************************/
+   2          /*                             TERMOMETAR                                */
+   3          /*************************************************************************/
+   4          
+   5          /*=======================================================================*/
+   6          /*                                .h                                     */
+   7          /*=======================================================================*/
+   8          
+   9          #include  <reg51.h>
+  10          
+  11          /*=======================================================================*/
+  12          /*                        globalne varijable                             */
+  13          /*=======================================================================*/
+  14          
+  15          sbit DQ  =P1^0;
+  16          sbit CLK =P1^1;
+  17          sbit RST_=P1^2;
+  18          
+  19          /*=======================================================================*/
+  20          /*           Funkcija za upis 8 bitne rijeci u DS1620                    */
+  21          /*=======================================================================*/
+  22          
+  23          void slanje8(unsigned char podatak)
+  24          {
+  25   1      unsigned char data i;
+  26   1      
+  27   1      for(i=0;i<8;i++)   /* petlja za upis podatka u DS1620 bit po bit, */
+  28   1         {               /* pocevsi od najmanje znacajnog (LSB)         */
+  29   2         CLK=0;
+  30   2         DQ=(bit)(podatak&(1<<i));       
+  31   2         CLK=1;          /* rastuci brid za upis i-tog bita */
+  32   2         }
+  33   1      }
+  34          
+  35          
+  36          /*=======================================================================*/
+  37          /*     Funkcija za upis u konfiguracijski registar sklopa DS1620         */
+  38          /*=======================================================================*/
+  39          
+  40          void PisiControl(unsigned char rijec)
+  41          {
+  42   1      unsigned int data j;
+  43   1      RST_=0;
+  44   1      RST_=1;
+  45   1      slanje8(0x0C);
+  46   1      slanje8(rijec);
+  47   1      RST_=0;
+  48   1      for(j=0;j<700;j++);     /* Pauza od oko 10 ms. Ovo je samo ilustrcija. */
+  49   1                              /* U praksi se ovo NIKAD ovako ne izvodi.      */
+  50   1      }
+  51          
+  52          
+  53          /*=======================================================================*/
+  54          /*           Funkcija za upis narebe bez argumenta u DS1620              */
+  55          /*=======================================================================*/
+C51 COMPILER V9.01   TERMO                                                                 11/17/2010 12:44:15 PAGE 2   
+
+  56          
+  57          void PisiKomandu(unsigned char komanda)
+  58          {
+  59   1      RST_=0;
+  60   1      RST_=1;
+  61   1      slanje8(komanda);
+  62   1      RST_=0;
+  63   1      }
+  64          
+  65          
+  66          /*=======================================================================*/
+  67          /*            Funkcija za citanje 9 bitne rijeci iz DS1620               */
+  68          /*=======================================================================*/
+  69          
+  70          int CitajTemp(void)
+  71          {
+  72   1      int data podatak=0;          /* temperatura * 2 */
+  73   1      unsigned char data i;        /* brojac u petlji */
+  74   1      
+  75   1      RST_=0;
+  76   1      
+  77   1      RST_=1;
+  78   1      
+  79   1      slanje8(0xAA);      /* naredba za citanje temperature */
+  80   1      DQ=1;               /* priprema za citanje iz DS1620 */
+  81   1      
+  82   1      for(i=0;i<9;i++)    /* petlja za citanje podatka iz DS1620 bit po bit, */
+  83   1         {                /* pocevsi od najmanje znacajnog (LSB) */
+  84   2         CLK=0;           /* padajuci brid  CLK koji postavlja podatak na DQ */
+  85   2         if(DQ) podatak=podatak+(1<<i); 
+  86   2         CLK=1;           /* uklanja podatak sa DQ */
+  87   2         }
+  88   1      
+  89   1      RST_=0;
+  90   1      
+  91   1      return(podatak);
+  92   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    144    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       2
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

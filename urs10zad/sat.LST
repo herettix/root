@@ -1,0 +1,43 @@
+C51 COMPILER V9.01   SAT                                                                   11/17/2010 13:28:19 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE SAT
+OBJECT MODULE PLACED IN sat.OBJ
+COMPILER INVOKED BY: C:\applic\Keil\C51\BIN\C51.EXE sat.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include <reg51.h>
+   2          
+   3          void ispis (unsigned char,unsigned char);
+   4          
+   5          void sat(void) interrupt 1 using 1 {
+   6   1              static int br_ulaza=0;
+   7   1              static int sekundi=0;
+   8   1      
+   9   1              br_ulaza++;     
+  10   1      
+  11   1              if(br_ulaza == 14) {
+  12   2                      sekundi++;
+  13   2                      if (sekundi > 99) { 
+  14   3                              sekundi = 0;
+  15   3                      }
+  16   2                      ispis('l', (sekundi / 10) + 48);
+  17   2                      ispis('d', (sekundi % 10) + 48);
+  18   2                      br_ulaza=0;
+  19   2              }
+  20   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    109    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      4    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

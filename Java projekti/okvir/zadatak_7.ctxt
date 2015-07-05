@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=
+comment0.target=zadatak_7()
+comment1.params=e
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.params=s
+comment2.target=void\ main(java.lang.String[])
+comment2.text=public\ void\ actionPerformed(ActionEvent\ e)\ {\ \ \ \ \ \ \ \ \ \ \ \ \ //drugi\ nacin\ rjesavanja\ ovog\ zadatka\r\nif\ (e.getSource\ ()\ \=\=\ but1){\ but2.setEnabled(true);\ but1.setEnabled(false);\ }\r\nelse\ {\ but2.setEnabled(false);\ but1.setEnabled(true);\ }\ }
+numComments=3

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=x\ y\ z\ w
+comment0.target=java.lang.String\ imaginarni_A(int,\ int,\ int,\ int)
+comment1.params=x\ y\ z\ w
+comment1.target=java.lang.String\ imaginarni_B(int,\ int,\ int,\ int)
+comment2.params=x\ y\ z\ w
+comment2.target=double\ imaginarni_C(int,\ int,\ int,\ int)
+numComments=3

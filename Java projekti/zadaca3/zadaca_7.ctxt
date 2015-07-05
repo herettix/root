@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=a1\ a2\ n
+comment0.target=double\ arniz(int,\ int,\ int)
+comment1.params=x\ y\ n
+comment1.target=double\ geoniz(int,\ int,\ int)
+numComments=2

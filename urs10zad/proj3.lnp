@@ -1,0 +1,6 @@
+"zad4.obj",
+"termo.obj",
+"sat.obj" 
+TO "proj3" 
+CODE( 0X0000-0X7FFE )
+XDATA( 0X0000-0XFFFE )

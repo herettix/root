@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE podaci SYSTEM "gramatika.dtd">
+<?xml-stylesheet type="text/xsl" href="pretvorba.xsl"?>
+
+<podaci>
+	<mjesta  id="236121329787099" kategorija="nocniklub" tipprivatsnoti="DA" parking="DA">
+		<naziv> Tufna club </naziv>
+		<oib> 12312312312 </oib>
+		<vlasnik> Pero Perić </vlasnik>
+		<telefon tip="kucni" pozivni="031">
+			<broj> 215020 </broj>
+		</telefon>
+		<adresa>
+			<ulica> Franje Kuhača </ulica>
+			<kucnibr> 10 </kucnibr>
+			<mjesto postbr="31000"> Osijek </mjesto>
+			<drzava> Hrvatska </drzava>
+		</adresa>
+		<radvr dan="pet"> <radp> 22 </radp> <radk> 24 </radk> </radvr>	
+		<radvr dan="sub"> <radp> 0 </radp> <radk> 5 </radk> </radvr>
+		<radvr dan="sub"> <radp> 22 </radp> <radk> 24 </radk> </radvr>
+		<radvr dan="ned"> <radp> 0 </radp> <radk> 4 </radk> </radvr>
+		<email> info@tufna.com.hr </email>
+		<webstr>  http://www.tufna.com.hr </webstr>
+	</mjesta>
+-
+	<mjesta  id="696274237138649" kategorija="restoran" tipprivatsnoti="NE" parking="DA">
+		<naziv> American bar Dollar </naziv>
+		<oib> 78996374112 </oib>
+		<vlasnik> Robert Pelich </vlasnik>
+		<telefon tip="mobilni" pozivni="099">
+			<broj> 2784007 </broj>
+		</telefon>
+		<adresa>
+			<ulica> Županijska </ulica>
+			<kucnibr> 5 </kucnibr>
+			<mjesto postbr="31000"> Osijek </mjesto>
+			<drzava> Hrvatska </drzava>
+		</adresa>
+		<radvr dan="pon"> <radp> 8 </radp> <radk> 22 </radk> </radvr>		
+		<radvr dan="uto"> <radp> 8 </radp> <radk> 22 </radk> </radvr>		
+		<radvr dan="sri"> <radp> 8 </radp> <radk> 22 </radk> </radvr>		
+		<radvr dan="cet"> <radp> 8 </radp> <radk> 22 </radk> </radvr>		
+		<radvr dan="pet"> <radp> 8 </radp> <radk> 22 </radk> </radvr>				
+		<radvr dan="sub"> <radp> 8 </radp> <radk> 22 </radk> </radvr>
+		<radvr dan="ned"> <radp> 8 </radp> <radk> 22 </radk> </radvr>		
+		<email> info@americanbardollar.com </email>
+		<webstr> http://www.americanbardollar.com/ </webstr>
+	</mjesta>
+
+	<mjesta  id="356677411094130" kategorija="restoran" tipprivatsnoti="DA" parking="DA">
+		<naziv> Pizzeria Sebastian </naziv>
+		<oib> 12345612389 </oib>
+		<vlasnik> Erik Mujtić </vlasnik>
+		<telefon tip="kucni" pozivni="031">
+			<broj> 570904 </broj>
+		</telefon>
+		<adresa>
+			<ulica> Sijenjak </ulica>
+			<kucnibr> 59 </kucnibr>
+			<mjesto postbr="31000"> Osijek </mjesto>
+			<drzava> Hrvatska </drzava>
+		</adresa>
+		<radvr dan="pon"> <radp> 9 </radp> <radk> 22 </radk> </radvr>		
+		<radvr dan="uto"> <radp> 9 </radp> <radk> 22 </radk> </radvr>		
+		<radvr dan="sri"> <radp> 9 </radp> <radk> 22 </radk> </radvr>		
+		<radvr dan="cet"> <radp> 9 </radp> <radk> 22 </radk> </radvr>		
+		<radvr dan="pet"> <radp> 9 </radp> <radk> 22 </radk> </radvr>				
+		<radvr dan="sub"> <radp> 9 </radp> <radk> 22 </radk> </radvr>
+		<radvr dan="ned"> <radp> 9 </radp> <radk> 22 </radk> </radvr>		
+		<email> sebastianpizzeria@gmail.com </email>
+		<webstr></webstr>
+	</mjesta>
+
+	<mjesta  id="121923451345056" kategorija="kafic" tipprivatsnoti="DA" parking="DA">
+		<naziv> Trica Caffe Bar </naziv>
+		<oib> 45645645645 </oib>
+		<vlasnik> Matej Mandić </vlasnik>
+		<telefon tip="kucni" pozivni="031">
+			<broj> 778414 </broj>
+		</telefon>
+		<adresa>
+			<ulica> Lučki prilaz </ulica>
+			<kucnibr> 2 </kucnibr>
+			<mjesto postbr="31000"> Osijek </mjesto>
+			<drzava> Hrvatska </drzava>
+		</adresa>
+		<radvr dan="pon"> <radp> 8 </radp> <radk> 23 </radk> </radvr>
+		<radvr dan="uto"> <radp> 8 </radp> <radk> 23 </radk> </radvr>
+		<radvr dan="sri"> <radp> 8 </radp> <radk> 23 </radk> </radvr>
+		<radvr dan="cet"> <radp> 8 </radp> <radk> 23 </radk> </radvr>
+		<radvr dan="pet"> <radp> 8 </radp> <radk> 23 </radk> </radvr>		
+		<radvr dan="sub"> <radp> 9 </radp> <radk> 24 </radk> </radvr>	
+		<radvr dan="ned"> <radp> 9 </radp> <radk> 24 </radk> </radvr>						
+		<email> caffetrica@gmail.com </email>
+		<webstr></webstr>
+	</mjesta>
+
+	<mjesta  id="39943839452" kategorija="nocniklub" tipprivatsnoti="NE" parking="NE">
+		<naziv> Matrix Osijek club </naziv>
+		<oib> 78978978978 </oib>
+		<vlasnik> Pero Pentanjak </vlasnik>
+		<telefon tip="mobilni" pozivni="091">
+			<broj> 3626000 </broj>
+		</telefon>
+		<telefon tip="mobilni" pozivni="099">
+			<broj> 5225986 </broj>
+		</telefon>
+		<adresa>
+			<ulica> Franje Kuhača </ulica>
+			<kucnibr> 15 </kucnibr>
+			<mjesto postbr="31000"> Osijek </mjesto>
+			<drzava> Hrvatska </drzava>
+		</adresa>
+		<radvr dan="cet"> <radp> 22 </radp> <radk> 24 </radk> </radvr>
+		<radvr dan="pet"> <radp> 0 </radp> <radk> 4 </radk> </radvr>
+		<radvr dan="pet"> <radp> 20 </radp> <radk> 24 </radk> </radvr>
+		<radvr dan="sub"> <radp> 0 </radp> <radk> 4 </radk> </radvr>
+		<radvr dan="sub"> <radp> 22 </radp> <radk> 24 </radk> </radvr>	
+		<radvr dan="ned"> <radp> 0 </radp> <radk> 4 </radk> </radvr>		
+		<email>  </email>
+		<webstr> http://matrix-nightclub.com/ </webstr>
+	</mjesta>
+	
+	<mjesta  id="1495107687404300" kategorija="izletiste" tipprivatsnoti="DA" parking="DA">
+		<naziv> Tikveš (Bilje) </naziv>
+		<oib> 12312313312 </oib>
+		<vlasnik> Mujtimir Milić </vlasnik>
+		<telefon tip="kucni" pozivni="031">
+			<broj> 628725 </broj>
+		</telefon>
+		<adresa>
+			<ulica> Titov dvorac </ulica>
+			<kucnibr> 1 </kucnibr>
+			<mjesto postbr="31328"> Lug </mjesto>
+			<drzava> Hrvatska </drzava>
+		</adresa>
+		<radvr dan="pon"> <radp> 10 </radp> <radk> 22 </radk> </radvr>			
+		<radvr dan="uto"> <radp> 10 </radp> <radk> 22 </radk> </radvr>			
+		<radvr dan="sri"> <radp> 10 </radp> <radk> 22 </radk> </radvr>			
+		<radvr dan="cet"> <radp> 10 </radp> <radk> 22 </radk> </radvr>		
+		<radvr dan="pet"> <radp> 10 </radp> <radk> 22 </radk> </radvr>			
+		<radvr dan="sub"> <radp> 10 </radp> <radk> 22 </radk> </radvr>		
+		<radvr dan="ned"> <radp> 10 </radp> <radk> 22 </radk> </radvr>						
+		<email></email>
+		<webstr></webstr>
+	</mjesta>	
+</podaci>	
+		

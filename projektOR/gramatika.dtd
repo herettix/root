@@ -1,0 +1,25 @@
+<!ELEMENT podaci (mjesta)*>
+<!ELEMENT mjesta (naziv,oib,vlasnik,telefon+,adresa+,radvr+,email?,webstr?)>
+<!ATTLIST mjesta id CDATA #REQUIRED> 
+<!ATTLIST mjesta kategorija (nocniklub|kafic|restoran|izletiste) #REQUIRED>
+<!ATTLIST mjesta tipprivatsnoti (DA|NE) #IMPLIED>
+<!ATTLIST mjesta parking (DA|NE) #IMPLIED>
+<!ELEMENT naziv (#PCDATA)>
+<!ELEMENT oib (#PCDATA)>
+<!ELEMENT vlasnik (#PCDATA)>
+<!ELEMENT telefon (broj)+>
+<!ATTLIST telefon tip (kucni|mobilni|telefax) #REQUIRED>
+<!ATTLIST telefon pozivni (031|032|091|095|097|098|099) #REQUIRED>
+<!ELEMENT broj (#PCDATA)>
+<!ELEMENT adresa (ulica,kucnibr,mjesto,drzava)>
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT kucnibr (#PCDATA)>
+<!ELEMENT mjesto (#PCDATA)>
+<!ATTLIST mjesto postbr CDATA #REQUIRED>
+<!ELEMENT drzava (#PCDATA)>
+<!ELEMENT radvr (radp,radk)>
+<!ATTLIST radvr dan (pon|uto|sri|cet|pet|sub|ned) #REQUIRED>
+<!ELEMENT radp (#PCDATA)>
+<!ELEMENT radk (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT webstr (#PCDATA)>

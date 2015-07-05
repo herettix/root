@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=double\ binarni_u_dekadski(int)
+comment1.params=x
+comment1.target=java.lang.String\ dekadski_u_binarni(int)
+numComments=2

@@ -1,0 +1,4 @@
+#BlueJ class context
+comment0.params=x\ y\ z\ a\ b\ c
+comment0.target=int\ operacija(int,\ int,\ int,\ int,\ int,\ int)
+numComments=1
